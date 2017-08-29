@@ -49,7 +49,7 @@ documentation for reference:
 Let's explore Ruby's `map` method.
 
 ```ruby
-# in irb or pry
+# in pry
 fibs = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 ```
 
