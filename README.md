@@ -13,8 +13,8 @@ features of list processing tasks in addition to implementation specifics.
 
 ## Prerequisites
 
--   [JavaScript Array Methods](https://github.com/ga-wdi-boston/js-array-methods)
--   [Ruby Array](https://github.com/ga-wdi-boston/ruby-arrays)
+-   [JavaScript Array Methods](https://git.generalassemb.ly/ga-wdi-boston/js-array-iteration-methods)
+-   [Ruby Array](https://git.generalassemb.ly/ga-wdi-boston/ruby-array)
 
 ## Objectives
 
@@ -26,7 +26,7 @@ By the end of this, developers should be able to:
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Make a new branch, `training`.
 1.  Install dependencies with `bundle install`.
@@ -49,7 +49,7 @@ documentation for reference:
 Let's explore Ruby's `map` method.
 
 ```ruby
-# in irb or pry
+# in pry
 fibs = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 ```
 
@@ -116,7 +116,7 @@ We'll explore these methods using `bin/sets_etc.rb`.
 ## Bonus Challenge: Return of the Word Count
 
 Remember our [text analysis
-exercise](https://github.com/ga-wdi-boston/js-reference-types#code-along-analyze-text)
+exercise](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types#code-along-analyze-text)
 from way-back?
 
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
