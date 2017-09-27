@@ -42,3 +42,7 @@ females = people.select { |person| isFemale(person) }.length
 When showing them `|`, also show them what it looks like when we do `+` to illustrate the difference (being that `|` does not include duplicate values, whereas `+` does).
 
 So `union = developers | consultants` vs. `concat = developers + consultants`
+
+## Useful Diagrams
+
+From Issue #32 ![Iteration Diagram](https://git.generalassemb.ly/storage/user/3667/files/280ede68-9487-11e7-8179-20976e1cdd04)
