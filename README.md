@@ -65,7 +65,7 @@ end
 
 ## Code Along: `reduce`
 
-Let's use `reduce` to calculate the sum of elements in `fibs`.
+Let's use [reduce](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce) to calculate the sum of elements in `fibs`.
 
 > In JavaScript, we used a function to control the behavior of Array methods.
 > In Ruby, we use a block ( `{ |p| ... }` for one line blocks, `do ... end` for
@@ -121,6 +121,10 @@ from way-back?
 
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
 `word_frequencies` in `lib/string.rb`
+
+## Looking Ahead
+
+As you may have noticed when looking at the [reduce documentation](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce), not all of the methods available to use on arrays are defined on Ruby's `Array Class`. More methods are defined on the `Enumerable` module that is included in `Array`, which will be covered in a future training.
 
 ## [License](LICENSE)
 
