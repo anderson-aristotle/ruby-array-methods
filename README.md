@@ -2,7 +2,7 @@
 
 # Ruby Array Methods
 
-We'll explore Ruby's [Array](http://ruby-doc.org/core-2.3.0/Array.html) type
+We'll explore Ruby's [Array](https://ruby-doc.org/core-2.4.1/Array.html) type
 and some of its methods. We'll also have a look at a few ways in which Ruby
 makes list processing (iterating through arrays) a bit more fun for the
 developer.
@@ -42,7 +42,7 @@ Let's compare the list of methods for Array in each language. Here is some
 documentation for reference:
 
 -   [Array.prototype - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
--   [Class: Array (Ruby 2.3.0)](http://ruby-doc.org/core-2.3.0/Array.html)
+-   [Class: Array (Ruby 2.4.1)](https://ruby-doc.org/core-2.4.1/Array.html)
 
 ## Demo: `map`
 
@@ -65,7 +65,7 @@ end
 
 ## Code Along: `reduce`
 
-Let's use `reduce` to calculate the sum of elements in `fibs`.
+Let's use [reduce](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce) to calculate the sum of elements in `fibs`.
 
 > In JavaScript, we used a function to control the behavior of Array methods.
 > In Ruby, we use a block ( `{ |p| ... }` for one line blocks, `do ... end` for
@@ -104,11 +104,11 @@ Use the `bin/people_array.rb` script to
 The results of the Ruby Array methods `-`, `&`, `|`, and `flatten` aren't
 easily reproducible in JavaScript.
 
--   [`-`](http://ruby-doc.org/core-2.3.0/Array.html#method-i-2D) is an Array
+-   [`-`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-2D) is an Array
     Difference
--   [`&`](http://ruby-doc.org/core-2.3.0/Array.html#method-i-26) is a [Set Intersection](https://goo.gl/XmIIcX)
--   [`|`](http://ruby-doc.org/core-2.3.0/Array.html#method-i-7C) is a [Set Union](https://goo.gl/ePuzW2)
--   [`flatten`](http://ruby-doc.org/core-2.3.0/Array.html#method-i-flatten)
+-   [`&`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-26) is a [Set Intersection](https://goo.gl/XmIIcX)
+-   [`|`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-7C) is a [Set Union](https://goo.gl/ePuzW2)
+-   [`flatten`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-flatten)
     reduces dimension
 
 We'll explore these methods using `bin/sets_etc.rb`.
@@ -121,6 +121,10 @@ from way-back?
 
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
 `word_frequencies` in `lib/string.rb`
+
+## Looking Ahead
+
+As you may have noticed when looking at the [reduce documentation](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce), not all of the methods available to use on arrays are defined on Ruby's `Array Class`. More methods are defined on the `Enumerable` module that is included in `Array`, which will be covered in a future training.
 
 ## [License](LICENSE)
 

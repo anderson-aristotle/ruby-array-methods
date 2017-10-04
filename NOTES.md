@@ -37,8 +37,18 @@ end
 females = people.select { |person| isFemale(person) }.length
 ```
 
+## Fibonacci Lab
+
+  Per Issue [#23](https://git.generalassemb.ly/ga-wdi-boston/ruby-array-methods/issues/23)
+
+  Into the lab if devs are struggling with how to accomplish these tasks, point them in the direction of the `select` method. We use this in the next code along, but they have not seen it yet.
+
 ### Set Operations
 
 When showing them `|`, also show them what it looks like when we do `+` to illustrate the difference (being that `|` does not include duplicate values, whereas `+` does).
 
 So `union = developers | consultants` vs. `concat = developers + consultants`
+
+## Useful Diagrams
+
+From Issue #32 ![Iteration Diagram](https://git.generalassemb.ly/storage/user/3667/files/280ede68-9487-11e7-8179-20976e1cdd04)
