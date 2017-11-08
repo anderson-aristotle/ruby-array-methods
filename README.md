@@ -76,6 +76,7 @@ Let's use [reduce](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-redu
 In Ruby, write
  scripts, in `lib/fibonacci.rb`.
 
+Using the `.reduce` method:
 -   calculates the product of elements of `fibs` (excluding zero).
 -   calculates the sum of the odd elements of `fibs`
 -   calculates the product of the even elements of `fibs`(excluding zero).
