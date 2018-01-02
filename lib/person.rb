@@ -2,6 +2,7 @@
 
 require 'date'
 
+# a class representing people and related data
 class Person
   def initialize(h)
     h.keys.each do |key|

@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 module ArrayMethods
+  # this is a module for testing purposes
   module Labs
     require 'csv'
     require_relative 'person.rb'
+    # a class that represents a person and related data
     class People
       attr_reader :people
       def initialize
@@ -22,7 +24,6 @@ module ArrayMethods
       def people_with_same_first_last_start_letter; end
 
       def average_age; end
-
     end
   end
 end
