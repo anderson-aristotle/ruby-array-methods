@@ -10,31 +10,31 @@ Write on the board a Javascript map method vs. a Ruby map method, and say what t
 You can add a .length (or similar methods) after a multi-line block OR an inline block. For example:
 
 ```
-females = people.select do |person|
-  person.gender === 'f'
+people_named_nick = people.select do |person|
+  person.given === 'Nick'
 end.length
 ```
 
 #### OR
 
 ```
-females = people.select { |person| person.gender == 'f' }.length
+people_named_nick = people.select { |person| person.given == 'Nick' }.length
 ```
 Show them anonymous block vs. named block, for example:
 ```
-females = people.select do |person|
-  person.gender === 'f'
+people_named_nick = people.select do |person|
+  person.given === 'Nick'
 end.length
 ```
 
 #### Is the same as
 
 ```
-def isFemale(person)
-  person.gender === 'f'
+def isNamedNick(person)
+  person.given = 'Nick'
 end
 
-females = people.select { |person| isFemale(person) }.length
+people_named_nick = people.select { |person| isNamedNick(person) }.length
 ```
 
 ## Fibonacci Lab
