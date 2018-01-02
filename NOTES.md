@@ -11,7 +11,7 @@ You can add a .length (or similar methods) after a multi-line block OR an inline
 
 ```
 people_named_nick = people.select do |person|
-  person.given === 'Nick'
+  person.given == 'Nick'
 end.length
 ```
 
@@ -23,7 +23,7 @@ people_named_nick = people.select { |person| person.given == 'Nick' }.length
 Show them anonymous block vs. named block, for example:
 ```
 people_named_nick = people.select do |person|
-  person.given === 'Nick'
+  person.given == 'Nick'
 end.length
 ```
 
@@ -31,7 +31,7 @@ end.length
 
 ```
 def isNamedNick(person)
-  person.given = 'Nick'
+  person.given == 'Nick'
 end
 
 people_named_nick = people.select { |person| isNamedNick(person) }.length
