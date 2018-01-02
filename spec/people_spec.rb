@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 require 'people'
 
 describe 'ArrayMethods::Labs::People' do
-  let(:people) {ArrayMethods::Labs::People.new}
-  let(:age) {25}
+  let(:people) { ArrayMethods::Labs::People.new }
+  let(:age) { 25 }
 
-  it "collects Person objects from data/people.csv" do
+  it 'collects Person objects from data/people.csv' do
     expect(people.people.count).to eq 2438
   end
 
-  it "contains an array of Person objects" do
+  it 'contains an array of Person objects' do
     expect(people.people.sample).to be_an_instance_of Person
   end
 
