@@ -1,29 +1,35 @@
 # frozen_string_literal: true
 
-module ArrayMethods
-  # this is a module for testing purposes
-  module Labs
-    require 'csv'
-    require_relative 'person.rb'
-    # a class that represents a person and related data
-    class People
-      attr_reader :people
-      def initialize
-        @people = []
-        CSV.foreach('data/people.csv',
-                    headers: true,
-                    header_converters: ->(h) { h.downcase.to_sym }) do |person|
-                      @people << Person.new(person.to_hash)
-                    end
-      end
+require 'csv'
+require_relative 'person.rb'
 
-      def people_older_than(age); end
+@people = []
+CSV.foreach('data/people.csv',
+            headers: true,
+            header_converters: ->(h) { h.downcase.to_sym }) do |person|
+              @people << Person.new(person.to_hash)
+            end
 
-      def people_younger_than(age); end
-
-      def people_with_same_first_last_start_letter; end
-
-      def average_age; end
-    end
-  end
+def people_older_than(age)
+  # your code here
 end
+
+def people_younger_than(age)
+  # your code here
+end
+
+def people_with_same_first_last_start_letter
+  # your code here
+end
+
+def average_age
+  # your code here
+end
+
+age = 25 # or some other age (tests are built with this age in mind)
+
+puts @people.count
+puts people_older_than(age)
+puts people_younger_than(age)
+puts people_with_same_first_last_start_letter
+puts average_age

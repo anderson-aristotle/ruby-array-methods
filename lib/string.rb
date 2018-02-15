@@ -1,16 +1,32 @@
 # frozen_string_literal: true
 
-# Add features to string
-class String
+# Methods to do text analysis
+module TextAnalysis
+  #
+  # The word list normalized (all uppercase with punctuation removed)
   def normalize_words
-    # The word list normalized (all uppercase with punctuation removed)
+    # your code here
   end
 
-  def unique_words; end
+  def unique_words
+    # your code here
+  end
 
-  def word_count(unique); end
+  def word_count(unique)
+    # your code here
+  end
 
-  def word_frequencies; end
+  def word_frequencies
+    # your code here
+  end
 
-  def longest_word; end
+  def longest_word
+    # your code here
+  end
+end
+
+# The Ruby String class
+class String
+  # Add our TextAnalysis methods to the String class
+  include TextAnalysis
 end

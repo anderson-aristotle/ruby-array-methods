@@ -73,13 +73,14 @@ Let's use [reduce](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-redu
 
 ## Lab: Fibonacci Calculations
 
-In Ruby, write
- scripts, in `lib/fibonacci.rb`.
+Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate the following:
 
-Using the `.reduce` method:
--   calculates the product of elements of `fibs` (excluding zero).
--   calculates the sum of the odd elements of `fibs`
--   calculates the product of the even elements of `fibs`(excluding zero).
+Using the `reduce` method:
+-   calculate the product of elements of `fibs` (excluding zero).
+-   calculate the sum of the odd elements of `fibs`
+-   calculate the product of the even elements of `fibs`(excluding zero).
+
+(Where is the `reduce` method defined? How do instances of the `Array` class get access to the `reduce` method?)
 
 ## Code-Along: People
 
@@ -92,7 +93,7 @@ the headers in `data/people.csv` plus the method `age`.
 
 ## Lab: People
 
-Use the `bin/people_array.rb` script to
+Use the `bin/people_array.rb` script to do the following:
 
 -   Count all the people who are older than you (or just pick an age).
 -   Count all the people who are younger than you (or just pick an age).
@@ -122,6 +123,8 @@ from way-back?
 
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
 `word_frequencies` in `lib/string.rb`
+
+Test your code by running the included specs: `bin/rspec spec/string_spec.rb`, or run all specs with `bin/rspec spec`.
 
 ## Looking Ahead
 
