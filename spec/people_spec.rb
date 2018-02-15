@@ -4,21 +4,21 @@ require 'spec_helper'
 
 describe 'people' do
   it 'prints the results of the various methods' do
-    results = <<-HEREDOC 
-2438
-1621
-780
-127
-38
+    results = <<~HEREDOC
+      2438
+      1621
+      780
+      127
+      38
     HEREDOC
-    expect{
+    expect do
       require 'people'
-    }.to output(results).to_stdout
+    end.to output(results).to_stdout
   end
 end
 
 ## Example tests using class People
-## needs people.rb to be rewritten in modular fashion, 
+## needs people.rb to be rewritten in modular fashion,
 ## for example if it were written as:
 #
 # class People
@@ -32,7 +32,7 @@ end
 # end
 #
 # etc ...
-#describe 'ArrayMethods::Labs::People' do
+# describe 'ArrayMethods::Labs::People' do
 #  let(:people) { ArrayMethods::Labs::People.new }
 #  let(:age) { 25 }
 #
@@ -67,4 +67,4 @@ end
 #      expect(people.average_age).to eq 38
 #    end
 #  end
-#end
+# end
