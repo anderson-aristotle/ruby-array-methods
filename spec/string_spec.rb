@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'string'
 require 'pry'
 
-describe 'String' do
+describe 'TextAnalysis' do
   let(:string) { 'This is a String! A String!' }
 
   describe 'normalize_words' do
