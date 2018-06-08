@@ -2,7 +2,7 @@
 
 # Ruby Array Methods
 
-We'll explore Ruby's [Array](https://ruby-doc.org/core-2.4.1/Array.html) type
+We'll explore Ruby's [Array](https://ruby-doc.org/core-2.5.0/Array.html) type
 and some of its methods. We'll also have a look at a few ways in which Ruby
 makes list processing (iterating through arrays) a bit more fun for the
 developer.
@@ -42,7 +42,7 @@ Let's compare the list of methods for Array in each language. Here is some
 documentation for reference:
 
 -   [Array.prototype - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
--   [Class: Array (Ruby 2.4.1)](https://ruby-doc.org/core-2.4.1/Array.html)
+-   [Class: Array (Ruby 2.5.0)](https://ruby-doc.org/core-2.5.0/Array.html)
 
 ## Demo: `map`
 
@@ -106,11 +106,11 @@ Use the `lib/people.rb` script to do the following:
 The results of the Ruby Array methods `-`, `&`, `|`, and `flatten` aren't
 easily reproducible in JavaScript.
 
--   [`-`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-2D) is an Array
+-   [`-`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-2D) is an Array
     Difference
--   [`&`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-26) is a [Set Intersection](https://goo.gl/XmIIcX)
--   [`|`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-7C) is a [Set Union](https://goo.gl/ePuzW2)
--   [`flatten`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-flatten)
+-   [`&`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-26) is a [Set Intersection](https://goo.gl/XmIIcX)
+-   [`|`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-7C) is a [Set Union](https://goo.gl/ePuzW2)
+-   [`flatten`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-flatten)
     reduces dimension
 
 We'll explore these methods using `bin/sets_etc.rb`.
