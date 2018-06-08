@@ -25,11 +25,3 @@ end
 def average_age
   # your code here
 end
-
-age = 25 # or some other age (tests are built with this age in mind)
-
-puts @people.count
-puts people_older_than(age)
-puts people_younger_than(age)
-puts people_with_same_first_last_start_letter
-puts average_age
