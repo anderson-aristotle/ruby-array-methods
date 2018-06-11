@@ -2,7 +2,7 @@
 
 # Ruby Array Methods
 
-We'll explore Ruby's [Array](https://ruby-doc.org/core-2.4.1/Array.html) type
+We'll explore Ruby's [Array](https://ruby-doc.org/core-2.5.0/Array.html) type
 and some of its methods. We'll also have a look at a few ways in which Ruby
 makes list processing (iterating through arrays) a bit more fun for the
 developer.
@@ -42,7 +42,7 @@ Let's compare the list of methods for Array in each language. Here is some
 documentation for reference:
 
 -   [Array.prototype - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
--   [Class: Array (Ruby 2.4.1)](https://ruby-doc.org/core-2.4.1/Array.html)
+-   [Class: Array (Ruby 2.5.0)](https://ruby-doc.org/core-2.5.0/Array.html)
 
 ## Demo: `map`
 
@@ -65,7 +65,7 @@ end
 
 ## Code Along: `reduce`
 
-Let's use [reduce](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce) to calculate the sum of elements in `fibs`.
+Let's use [reduce](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-reduce) to calculate the sum of elements in `fibs`.
 
 > In JavaScript, we used a function to control the behavior of Array methods.
 > In Ruby, we use a block ( `{ |p| ... }` for one line blocks, `do ... end` for
@@ -93,7 +93,7 @@ the headers in `data/people.csv` plus the method `age`.
 
 ## Lab: People
 
-Use the `bin/people_array.rb` script to do the following:
+Use the `lib/people.rb` script to do the following:
 
 -   Count all the people who are older than you (or just pick an age).
 -   Count all the people who are younger than you (or just pick an age).
@@ -106,14 +106,14 @@ Use the `bin/people_array.rb` script to do the following:
 The results of the Ruby Array methods `-`, `&`, `|`, and `flatten` aren't
 easily reproducible in JavaScript.
 
--   [`-`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-2D) is an Array
+-   [`-`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-2D) is an Array
     Difference
--   [`&`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-26) is a [Set Intersection](https://goo.gl/XmIIcX)
--   [`|`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-7C) is a [Set Union](https://goo.gl/ePuzW2)
--   [`flatten`](https://ruby-doc.org/core-2.4.1/Array.html#method-i-flatten)
+-   [`&`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-26) is a [Set Intersection](https://en.wikipedia.org/wiki/Intersection_%28set_theory%29)
+-   [`|`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-7C) is a [Set Union](https://en.wikipedia.org/wiki/Union_%28set_theory%29)
+-   [`flatten`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-flatten)
     reduces dimension
 
-We'll explore these methods using `bin/sets_etc.rb`.
+We'll explore these methods using `lib/sets_etc.rb`.
 
 ## Bonus Challenge: Return of the Word Count
 
@@ -128,7 +128,7 @@ Test your code by running the included specs: `bin/rspec spec/string_spec.rb`, o
 
 ## Looking Ahead
 
-As you may have noticed when looking at the [reduce documentation](https://ruby-doc.org/core-2.4.2/Enumerable.html#method-i-reduce), not all of the methods available to use on arrays are defined on Ruby's `Array Class`. More methods are defined on the `Enumerable` module that is included in `Array`, which will be covered in a future training.
+As you may have noticed when looking at the [reduce documentation](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-reduce), not all of the methods available to use on arrays are defined on Ruby's `Array Class`. More methods are defined on the `Enumerable` module that is included in `Array`, which will be covered in a future training.
 
 ## [License](LICENSE)
 

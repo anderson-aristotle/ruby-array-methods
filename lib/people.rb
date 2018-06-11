@@ -3,33 +3,28 @@
 require 'csv'
 require_relative 'person.rb'
 
-@people = []
+people = []
 CSV.foreach('data/people.csv',
             headers: true,
             header_converters: ->(h) { h.downcase.to_sym }) do |person|
-              @people << Person.new(person.to_hash)
+              people << Person.new(person.to_hash)
             end
 
-def people_older_than(age)
+def people_older_than(people, age)
   # your code here
 end
 
-def people_younger_than(age)
+def people_younger_than(people, age)
   # your code here
 end
 
-def people_with_same_first_last_start_letter
+def people_with_same_first_last_start_letter(people)
   # your code here
 end
 
-def average_age
+def average_age(people)
   # your code here
 end
 
-age = 25 # or some other age (tests are built with this age in mind)
-
-puts @people.count
-puts people_older_than(age)
-puts people_younger_than(age)
-puts people_with_same_first_last_start_letter
-puts average_age
+# You can test your code like this:
+puts people_older_than(people, 30)
