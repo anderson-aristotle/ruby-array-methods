@@ -86,7 +86,7 @@ get access to the `reduce` method?)
 
 ## Code-Along: People
 
-Let's use the script `bin/people_array.rb` to explore Array methods in Ruby.
+Let's use the script `lib/people.rb` to explore Array methods in Ruby.
 The data in the objects we'll be processing comes from the comma separated
 values (CSV) file `data/people.csv`.
 
