@@ -13,36 +13,36 @@ features of list processing tasks in addition to implementation specifics.
 
 ## Prerequisites
 
--   [JavaScript Array Methods](https://git.generalassemb.ly/ga-wdi-boston/js-array-iteration-methods)
--   [Ruby Array](https://git.generalassemb.ly/ga-wdi-boston/ruby-array)
+- [JavaScript Array Methods](https://git.generalassemb.ly/ga-wdi-boston/js-array-iteration-methods)
+- [Ruby Array](https://git.generalassemb.ly/ga-wdi-boston/ruby-array)
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Iterate through arrays by using Ruby array methods.
--   Pass inline code as blocks to Array instance methods.
--   Pass method names as symbols to Array instance methods.
+- Iterate through arrays by using Ruby array methods.
+- Pass inline code as blocks to Array instance methods.
+- Pass method names as symbols to Array instance methods.
 
 ## Preparation
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Make a new branch, `training`.
-1.  Install dependencies with `bundle install`.
+1. Make a new branch, `training`.
+1. Install dependencies with `bundle install`.
 
 ## Array Methods
 
 Both JavaScript and Ruby have types that represent lists. In both languages,
 these types are called "arrays". In Ruby, `Array` is a class that holds methods
 for arrays, and in JavaScript, `Array.prototype` is an object that holds
-  methods for arrays.
+methods for arrays.
 
 Let's compare the list of methods for Array in each language. Here is some
 documentation for reference:
 
--   [Array.prototype - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
--   [Class: Array (Ruby 2.5.0)](https://ruby-doc.org/core-2.5.0/Array.html)
+- [Array.prototype - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
+- [Class: Array (Ruby 2.5.0)](https://ruby-doc.org/core-2.5.0/Array.html)
 
 ## Demo: `map`
 
@@ -76,15 +76,17 @@ Let's use [reduce](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-redu
 Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate the following:
 
 Using the `reduce` method:
--   calculate the product of elements of `fibs` (excluding zero).
--   calculate the sum of the odd elements of `fibs`
--   calculate the product of the even elements of `fibs`(excluding zero).
 
-(Where is the `reduce` method defined? How do instances of the `Array` class get access to the `reduce` method?)
+- calculate the product of elements of `fibs` (excluding zero).
+- calculate the sum of the odd elements of `fibs`
+- calculate the product of the even elements of `fibs`(excluding zero).
+
+(Where is the `reduce` method defined? How do instances of the `Array` class
+get access to the `reduce` method?)
 
 ## Code-Along: People
 
-Let's use the script `bin/people_array.rb` to explore Array methods in Ruby.
+Let's use the script `lib/people.rb` to explore Array methods in Ruby.
 The data in the objects we'll be processing comes from the comma separated
 values (CSV) file `data/people.csv`.
 
@@ -95,23 +97,23 @@ the headers in `data/people.csv` plus the method `age`.
 
 Use the `lib/people.rb` script to do the following:
 
--   Count all the people who are older than you (or just pick an age).
--   Count all the people who are younger than you (or just pick an age).
--   Count all the people whose first name and last name start with the same
-    letter.
--   Calculate the average age of all the people.
+- Count all the people who are older than you (or just pick an age).
+- Count all the people who are younger than you (or just pick an age).
+- Count all the people whose first name and last name start with the same
+  letter.
+- Calculate the average age of all the people.
 
 ## Code-Along: Set Operations
 
 The results of the Ruby Array methods `-`, `&`, `|`, and `flatten` aren't
 easily reproducible in JavaScript.
 
--   [`-`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-2D) is an Array
-    Difference
--   [`&`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-26) is a [Set Intersection](https://en.wikipedia.org/wiki/Intersection_%28set_theory%29)
--   [`|`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-7C) is a [Set Union](https://en.wikipedia.org/wiki/Union_%28set_theory%29)
--   [`flatten`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-flatten)
-    reduces dimension
+- [`-`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-2D) is an Array
+  Difference
+- [`&`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-26) is a [Set Intersection](https://en.wikipedia.org/wiki/Intersection_%28set_theory%29)
+- [`|`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-7C) is a [Set Union](https://en.wikipedia.org/wiki/Union_%28set_theory%29)
+- [`flatten`](https://ruby-doc.org/core-2.5.0/Array.html#method-i-flatten)
+  reduces dimension
 
 We'll explore these methods using `lib/sets_etc.rb`.
 
@@ -124,7 +126,8 @@ from way-back?
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
 `word_frequencies` in `lib/string.rb`
 
-Test your code by running the included specs: `bin/rspec spec/string_spec.rb`, or run all specs with `bin/rspec spec`.
+Test your code by running the included specs: `bin/rspec spec/string_spec.rb`,
+or run all specs with `bin/rspec spec`.
 
 ## Looking Ahead
 
@@ -132,6 +135,6 @@ As you may have noticed when looking at the [reduce documentation](https://ruby-
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
