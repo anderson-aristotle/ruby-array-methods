@@ -120,7 +120,7 @@ We'll explore these methods using `lib/sets_etc.rb`.
 ## Bonus Challenge: Return of the Word Count
 
 Remember our [text analysis
-exercise](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types#code-along-analyze-text)
+exercise](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types#code-along-collections)
 from way-back?
 
 Let's implement `normalize_words`, `unique_words`, `word_count`, and
