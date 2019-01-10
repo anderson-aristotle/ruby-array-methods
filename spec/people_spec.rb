@@ -25,13 +25,13 @@ describe 'People' do
 
   describe 'people_older_than(age)' do
     it 'returns the count of people older than (age)' do
-      expect(people_older_than(people, 25)).to eq 1631
+      expect(people_older_than(people, 25)).to eq 1655
     end
   end
 
   describe 'people_younger_than(age)' do
     it 'returns the count of people older than (age)' do
-      expect(people_younger_than(people, 25)).to eq 769
+      expect(people_younger_than(people, 25)).to eq 754
     end
   end
 
