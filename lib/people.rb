@@ -7,7 +7,7 @@ csv_people = []
 CSV.foreach('data/people.csv',
             headers: true,
             header_converters: ->(h) { h.downcase.to_sym }) do |person|
-              people << Person.new(person.to_hash)
+              csv_people << Person.new(person.to_hash)
             end
 
 def people_older_than(people, age)
