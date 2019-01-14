@@ -3,7 +3,7 @@
 require 'csv'
 require_relative 'person.rb'
 
-people = []
+csv_people = []
 CSV.foreach('data/people.csv',
             headers: true,
             header_converters: ->(h) { h.downcase.to_sym }) do |person|
@@ -27,4 +27,4 @@ def average_age(people)
 end
 
 # You can test your code like this:
-puts people_older_than(people, 30)
+puts people_older_than(csv_people, 30)
