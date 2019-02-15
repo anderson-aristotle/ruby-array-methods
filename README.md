@@ -73,7 +73,8 @@ Let's use [reduce](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-redu
 
 ## Lab: Fibonacci Calculations
 
-Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate the following:
+Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate
+the following:
 
 Using the `reduce` method:
 
