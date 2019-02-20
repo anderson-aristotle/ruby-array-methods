@@ -4,9 +4,9 @@ require 'date'
 
 # a class representing people and related data
 class Person
-  def initialize(h)
-    h.each_key do |key|
-      instance_variable_set(('@' + key.to_s).to_sym, h[key])
+  def initialize(hsh)
+    hsh.each_key do |key|
+      instance_variable_set(('@' + key.to_s).to_sym, hsh[key])
       self.class.send(:attr_reader, key)
     end
   end

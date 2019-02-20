@@ -73,7 +73,8 @@ Let's use [reduce](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-redu
 
 ## Lab: Fibonacci Calculations
 
-Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate the following:
+Complete the `lib/fibonacci.rb` script to use the `reduce` method to calculate
+the following:
 
 Using the `reduce` method:
 
@@ -132,6 +133,10 @@ or run all specs with `bin/rspec spec`.
 ## Looking Ahead
 
 As you may have noticed when looking at the [reduce documentation](https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-reduce), not all of the methods available to use on arrays are defined on Ruby's `Array Class`. More methods are defined on the `Enumerable` module that is included in `Array`, which will be covered in a future training.
+
+## Additional Resources
+
+- [How Does Symbol#to_proc Work?](http://benjamintan.io/blog/2015/03/16/how-does-symbol-to_proc-work/)
 
 ## [License](LICENSE)
 

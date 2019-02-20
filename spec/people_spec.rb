@@ -25,13 +25,19 @@ describe 'People' do
 
   describe 'people_older_than(age)' do
     it 'returns the count of people older than (age)' do
-      expect(people_older_than(people, 25)).to eq 1655
+      people_older_than_twenty_five = people.select do |person|
+        person.age > 25
+      end
+      expect(people_older_than(people, 25)).to eq people_older_than_twenty_five.count
     end
   end
 
   describe 'people_younger_than(age)' do
     it 'returns the count of people older than (age)' do
-      expect(people_younger_than(people, 25)).to eq 754
+      people_younger_than_twenty_five = people.select do |person|
+        person.age < 25
+      end
+      expect(people_younger_than(people, 25)).to eq people_younger_than_twenty_five.count
     end
   end
 
